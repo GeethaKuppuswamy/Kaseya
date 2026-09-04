@@ -1,4 +1,4 @@
-# Intuit Leadership Portfolio
+# Kaseya Leadership Portfolio
 
 Interactive interview presentation for Geetha Kuppuswamy.
 
