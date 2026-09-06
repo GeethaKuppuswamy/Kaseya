@@ -248,3 +248,15 @@
 .lighthouse-outcome{display:grid;grid-template-columns:155px 1fr;gap:20px;align-items:center;margin-top:20px!important;padding:17px 20px;background:#e9efff;border-left:4px solid var(--blue)}.lighthouse-outcome>span{text-transform:uppercase;letter-spacing:.11em;font-size:12px;font-weight:700;color:var(--blue)}.lighthouse-outcome p{font-family:"Instrument Serif",serif;font-size:21px;line-height:1.35;color:var(--deep);margin:0}.outcome-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px!important}.outcome-grid article{background:#fff;border:1px solid var(--line);border-top:3px solid var(--blue);padding:17px}.outcome-grid article>span{font-family:"Instrument Serif",serif;font-size:24px;color:var(--blue)}.outcome-grid h3{font-size:18px;margin:11px 0 8px}.outcome-grid ul{padding-left:17px;margin:0}.outcome-grid li{font-size:13px;line-height:1.35;color:var(--muted);margin-bottom:6px}
 @media(max-width:900px){#personal>.section-tag{left:50%;top:75px}.principle-cards,.program-grid,.readiness-grid,.governance-grid{grid-template-columns:1fr}.horizon-rail{grid-template-columns:1fr}.horizon-rail>i{transform:rotate(90deg);justify-self:center}.workstream-list,.milestone-list,.readiness-checks{grid-template-columns:1fr}.milestone-list li:last-child{grid-column:auto}.case-study-insight,.proof-bar{grid-template-columns:1fr;gap:6px}.case-study-insight p{padding:8px 0 0;border-left:0;border-top:1px solid rgba(255,255,255,.2)}}
 @media(max-width:900px){.day-plan,.risk-grid,.outcome-grid,.governance-proofs{grid-template-columns:1fr}.ninety-principle,.risk-principle,.outcome-close,.lighthouse-outcome{grid-template-columns:1fr;gap:7px}}
+
+/* Unified section heading: Section | Slide purpose */
+.section-tag{font-size:16px;letter-spacing:.11em}
+.section-tag>span{font-size:17px}
+.section-tag .section-context{display:inline-block;padding-left:12px;border-left:1px solid var(--line);color:var(--blue);font-size:16px;line-height:1.2;letter-spacing:.08em;text-transform:uppercase}
+.section-tag.light .section-context{border-left-color:rgba(255,255,255,.28);color:#8fb1ff}
+.cover-label{font-size:15px;letter-spacing:.11em}
+.cover-label b{font-size:15px}
+.cover-label i{font-style:normal;padding-left:12px;border-left:1px solid var(--line);color:var(--blue);font-weight:700}
+#personal>.section-tag{font-size:16px}
+@media(max-width:900px){.section-tag .section-context{font-size:14px}.section-tag{font-size:14px}.section-tag>span{font-size:15px}}
+@media(max-width:620px){.section-tag .section-context{display:none}}
