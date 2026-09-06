@@ -181,3 +181,14 @@
 #mm-results .business-enabled{margin-top:16px!important;padding:16px 20px}
 #mm-results .business-enabled span{font-size:13px}
 #mm-results .business-enabled b{font-size:17px;line-height:1.45;color:var(--ink)}
+
+/* Personal-slide map accuracy and heading lock */
+.slide.personal .journey-center h2{font-size:clamp(28px,2.7vw,40px)!important;line-height:1.05!important;letter-spacing:-.035em!important;white-space:normal;position:relative;z-index:5}
+.journey-route{position:absolute;inset:0;width:100%;height:100%;z-index:2;overflow:visible}
+.journey-route>path{fill:none;stroke:var(--blue);stroke-width:5;stroke-linecap:round;stroke-dasharray:10 10}
+.journey-route marker path{fill:var(--blue)}
+.india-dot{left:21.4%;top:44.8%;width:13px;height:13px;background:var(--coral);box-shadow:0 0 0 3px #fff,0 0 0 5px var(--coral)}
+.california-dot{left:76.7%;top:33.4%;width:13px;height:13px;background:var(--blue);box-shadow:0 0 0 3px #fff,0 0 0 5px var(--blue)}
+.india-label{left:13%;top:51%;color:#9d3f2f}.california-label{left:69%;top:40%;color:var(--blue)}
+.journey-plane{left:48%;top:17%;transform:rotate(10deg)}
+.journey-map strong{left:46%;top:34%}
