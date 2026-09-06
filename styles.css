@@ -100,6 +100,32 @@
 
 @media(max-width:900px){.personal .section-context{display:none}.personal-layout{grid-template-columns:1fr;gap:28px}.personal-story h2 br{display:none}.journey-map{max-width:620px}.mini-collage{height:390px}}
 @media(max-width:560px){.life-collages{grid-template-columns:1fr}.mini-collage{height:350px;grid-template-columns:1fr 1fr}.journey-map{margin-top:15px}.personal-note{font-size:20px}.collage-heading small{font-size:13px}}
+
+/* Four-corner personal collage composition */
+.personal{padding-left:max(4vw,36px);padding-right:max(4vw,36px)}
+.personal-stage{height:min(730px,calc(100vh - 150px));display:grid;grid-template-columns:minmax(285px,1fr) minmax(390px,1.36fr) minmax(285px,1fr);grid-template-rows:1fr 1fr;grid-template-areas:"hiking journey food" "family journey yoga";gap:16px 24px;align-items:stretch}
+.journey-center{grid-area:journey;align-self:center;text-align:center;padding:22px 10px}
+.journey-center .overline{margin-bottom:10px}
+.journey-center h2{font-size:clamp(30px,3.1vw,44px)!important;white-space:nowrap}
+.journey-center .journey-map{margin-top:18px;padding:8px;background:rgba(255,255,255,.82)}
+.journey-center .personal-note{margin:14px auto 0;font-size:19px;max-width:440px}
+.corner-collage{min-width:0;background:rgba(255,255,255,.5);border:1px solid rgba(16,27,45,.06);padding:12px}
+.hiking-feature{grid-area:hiking}.food-feature{grid-area:food}.family-feature{grid-area:family}.yoga-placeholder{grid-area:yoga}
+.corner-collage .collage-heading{margin-bottom:9px;gap:10px}
+.corner-collage .collage-heading>span{width:30px;height:30px;flex-basis:30px;font-size:15px}
+.corner-collage .collage-heading b{font-size:17px}.corner-collage .collage-heading small{font-size:12px}
+.corner-collage .mini-collage{height:calc(100% - 48px);min-height:205px;gap:6px}
+.corner-collage .mini-collage figure{border-width:4px;background:#e9eef5}
+.corner-collage .mini-collage img{object-fit:contain!important;object-position:center!important}
+.family-collage{height:calc(100% - 48px);min-height:205px;display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:6px;transform:rotate(-.25deg)}
+.family-collage figure{margin:0;overflow:hidden;border:4px solid #fff;background:#e9eef5;box-shadow:0 10px 22px rgba(16,27,45,.11)}
+.family-collage figure:nth-child(1){transform:rotate(-.7deg)}.family-collage figure:nth-child(2){transform:rotate(.8deg)}.family-collage figure:nth-child(3){transform:rotate(.55deg)}.family-collage figure:nth-child(4){transform:rotate(-.6deg)}
+.family-collage img{width:100%;height:100%;display:block;object-fit:contain}
+.yoga-placeholder{display:flex;align-items:center;justify-content:center;gap:16px;border:1px dashed rgba(35,108,255,.32);background:rgba(255,255,255,.45);color:var(--deep)}
+.yoga-symbol{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--deep);color:#fff;font-size:30px}
+.yoga-placeholder b{display:block;font-size:19px}.yoga-placeholder small{display:block;margin-top:4px;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.08em}
+@media(max-width:1050px){.personal-stage{height:auto;grid-template-columns:1fr 1fr;grid-template-rows:auto;grid-template-areas:"journey journey" "hiking food" "family yoga"}.journey-center{padding:10px 8vw}.corner-collage{min-height:300px}}
+@media(max-width:620px){.personal-stage{grid-template-columns:1fr;grid-template-areas:"journey" "hiking" "food" "family" "yoga"}.journey-center{padding:10px 0}.journey-center h2{white-space:normal}.corner-collage{min-height:330px}}
 #ias-model .material-mockups .mock-head b{font-size:18px}
 #ias-model .material-mockups .mock-head span{font-size:13px}
 #ias-model .material-mockups .binder-sections i{font-size:13px}
