@@ -82,20 +82,24 @@
 .map-label{position:absolute;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--deep);z-index:4;background:rgba(255,255,255,.88);padding:3px 6px}.india-label{left:17%;top:54%}.usa-label{left:72%;top:44%}
 .journey-map strong{position:absolute;left:47%;top:36%;background:var(--deep);color:#fff;padding:6px 10px;font-size:13px;letter-spacing:.1em;border-radius:99px;z-index:4}
 .personal-note{margin:12px 0 0;color:var(--muted);font-family:"Instrument Serif",serif;font-size:23px;line-height:1.3;max-width:550px}
-.hiking-feature{position:relative}
+.life-collages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-items:start}
+.collage-feature{position:relative;min-width:0}
 .collage-heading{display:flex;align-items:center;gap:14px;margin-bottom:14px}
-.collage-heading>span{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-family:"Instrument Serif",serif;font-size:19px}
-.collage-heading b{display:block;font-size:22px}.collage-heading small{display:block;margin-top:3px;color:var(--muted);font-size:14px}
-.hiking-collage{height:472px;display:grid;grid-template-columns:.94fr 1.06fr;grid-template-rows:1fr 1fr;gap:12px;transform:rotate(.35deg)}
-.hiking-collage figure{position:relative;margin:0;overflow:hidden;background:#fff;border:8px solid #fff;box-shadow:0 14px 30px rgba(16,27,45,.13)}
-.hiking-collage img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .45s ease}
-.hiking-collage figure:hover img{transform:scale(1.035)}
-.hike-main{grid-column:1/2;grid-row:1/3;transform:rotate(-1.25deg);z-index:2}.hike-main img{object-position:center 56%}
-.hike-top{grid-column:2/3;grid-row:1/2;transform:rotate(1.4deg)}.hike-top img{object-position:center 58%}
-.hike-bottom{grid-column:2/3;grid-row:2/3;transform:rotate(-.9deg)}.hike-bottom img{object-position:center 52%}
+.collage-heading>span{flex:0 0 34px;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--blue);color:#fff;font-family:"Instrument Serif",serif;font-size:17px}
+.food-feature .collage-heading>span{background:var(--coral)}
+.collage-heading b{display:block;font-size:20px}.collage-heading small{display:block;margin-top:3px;color:var(--muted);font-size:13px;line-height:1.25}
+.mini-collage{height:414px;display:grid;grid-template-columns:1.02fr .98fr;grid-template-rows:1fr 1fr;gap:8px;transform:rotate(.35deg)}
+.mini-collage figure{position:relative;margin:0;overflow:hidden;background:#fff;border:6px solid #fff;box-shadow:0 12px 25px rgba(16,27,45,.13)}
+.mini-collage img{width:100%;height:100%;display:block;object-fit:cover;transition:transform .45s ease}
+.mini-collage figure:hover img{transform:scale(1.035)}
+.tile-main{grid-column:1/2;grid-row:1/3;transform:rotate(-1.15deg);z-index:2}.hiking-collage .tile-main img{object-position:center 56%}
+.tile-top{grid-column:2/3;grid-row:1/2;transform:rotate(1.25deg)}.hiking-collage .tile-top img{object-position:center 58%}
+.tile-bottom{grid-column:2/3;grid-row:2/3;transform:rotate(-.8deg)}.hiking-collage .tile-bottom img{object-position:center 52%}
+.food-collage{transform:rotate(-.3deg)}
+.food-collage .tile-main img{object-position:center 48%}.food-collage .tile-top img{object-position:center}.food-collage .tile-bottom img{object-position:center}
 
-@media(max-width:900px){.personal .section-context{display:none}.personal-layout{grid-template-columns:1fr;gap:28px}.personal-story h2 br{display:none}.journey-map{max-width:520px}.hiking-collage{height:430px}}
-@media(max-width:560px){.hiking-collage{height:350px;grid-template-columns:1fr 1fr}.journey-map{margin-top:15px}.personal-note{font-size:20px}.collage-heading small{font-size:13px}}
+@media(max-width:900px){.personal .section-context{display:none}.personal-layout{grid-template-columns:1fr;gap:28px}.personal-story h2 br{display:none}.journey-map{max-width:620px}.mini-collage{height:390px}}
+@media(max-width:560px){.life-collages{grid-template-columns:1fr}.mini-collage{height:350px;grid-template-columns:1fr 1fr}.journey-map{margin-top:15px}.personal-note{font-size:20px}.collage-heading small{font-size:13px}}
 #ias-model .material-mockups .mock-head b{font-size:18px}
 #ias-model .material-mockups .mock-head span{font-size:13px}
 #ias-model .material-mockups .binder-sections i{font-size:13px}
