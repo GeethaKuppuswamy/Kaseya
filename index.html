@@ -92,17 +92,14 @@
         <div class="personal-story journey-center">
           <p class="overline">The person behind the programs</p>
           <h2>From India to California</h2>
-          <div class="journey-map" aria-label="Journey from India to the United States in 2007">
-            <img src="assets/personal/world-map.png" alt="World map showing Geetha's journey from India to the United States" />
+          <div class="journey-map flag-journey" aria-label="Journey from India to California, USA, in 2007">
+            <div class="journey-endpoint india-endpoint"><span class="country-flag" aria-hidden="true">🇮🇳</span><b>India</b><small>Starting point</small></div>
             <svg class="journey-route" viewBox="0 0 1000 480" aria-hidden="true">
               <defs><marker id="route-arrow" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z"></path></marker></defs>
-              <path d="M220 220 Q500 38 775 165" marker-end="url(#route-arrow)"></path>
+              <path d="M220 270 Q500 55 780 270" marker-end="url(#route-arrow)"></path>
             </svg>
-            <span class="map-dot india-dot" aria-hidden="true"></span>
-            <span class="map-dot california-dot" aria-hidden="true"></span>
             <span class="journey-plane" aria-hidden="true">✈</span>
-            <span class="map-label india-label">Start · India</span>
-            <span class="map-label california-label">California</span>
+            <div class="journey-endpoint usa-endpoint"><span class="country-flag" aria-hidden="true">🇺🇸</span><b>California, USA</b><small>New home</small></div>
             <strong>2007</strong>
           </div>
           <p class="personal-note">In 2007, I took a one-way leap from India to the United States.</p>
@@ -350,6 +347,22 @@
       <aside class="proof-bar compact-proof"><span>Proven with Self-Serve Maturity</span><strong>1 program → 5 workstreams</strong><p>Broke the strategy into API modernization, metrics and insights, Widgets Explorer, external-vendor contracts, and an integrated delivery track.</p></aside>
     </section>
 
+    <section class="slide case-study-slide governance-slide" id="case-governance" data-title="Case study: Execution model" data-section="Case study">
+      <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Execution model</b></div>
+      <h2>How I would run the program—<br><em>from setup through scale.</em></h2>
+      <div class="execution-phases" aria-label="Program execution lifecycle">
+        <article class="phase-planning"><span>01 · Planning</span><h3>Build the program foundation</h3><ul><li>Program charter</li><li>Dependencies identified</li><li>Ownership established</li><li>Outcomes defined</li><li>Kickoff meeting</li><li>Control center / binder with execution and communication modes defined</li></ul></article>
+        <article class="phase-execution"><span>02 · Execution</span><h3>Create the operating rhythm</h3><ul><li>Weekly Scrum of Scrums</li><li>Data Governance forum</li><li>API Governance forum</li><li>Leadership decision review / Steering Committee</li></ul></article>
+        <article class="phase-launch"><span>03 · Launch</span><h3>Prove readiness before release</h3><ul><li>Readiness heatmap review</li><li>Readiness gates defined and approved</li></ul><p>The next slide expands the product, security, data, and operational checks behind these gates.</p></article>
+        <article class="phase-learning"><span>04 · Learnings</span><h3>Measure, learn, and scale</h3><p>Review <b>outcomes and scaling</b>, capture reusable patterns, and decide on the next wave.</p></article>
+      </div>
+      <div class="governance-proofs">
+        <article><span>Command center</span><b>Fast progress</b><p>Created one place to surface blockers, convene owners, and drive decisions to closure.</p></article>
+        <article><span>Web performance</span><b>≤ 2 days</b><p>Shortened decision turnaround by bringing evidence, options, owners, and deadlines together.</p></article>
+        <article><span>Capability maturity forum</span><b>35 edge cases</b><p>Resolved Intuit-wide capability questions through one clean cross-functional decision forum.</p></article>
+      </div>
+    </section>
+
     <section class="slide case-study-slide readiness-slide" id="case-readiness" data-title="Case study: Readiness" data-section="Case study">
       <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Technical readiness</b></div>
       <h2>Make sure every product is ready<br><em>before we scale.</em></h2>
@@ -381,28 +394,6 @@
         </div>
       </div>
       <aside class="proof-bar compact-proof"><span>Proven across platform programs</span><strong>Checklist → template</strong><p>Created a readiness checklist that became the shared platform template, then evolved it by customer context—adding, modifying, or removing gates such as AI-specific data-quality checks.</p></aside>
-    </section>
-
-    <section class="slide case-study-slide governance-slide" id="case-governance" data-title="Case study: Governance" data-section="Case study">
-      <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Execution model</b></div>
-      <h2>How I would run the program—<br><em>from setup through scale.</em></h2>
-      <table class="execution-table case-execution-table">
-        <thead><tr><th>When</th><th>Operating mechanism</th><th>Purpose</th></tr></thead>
-        <tbody>
-          <tr><td><b>At the start</b></td><td><strong>Program charter + kickoff</strong><span>Outcomes · scope · ownership</span></td><td>Align leaders on the customer outcome, success measures, scope, owners, and decision rights.</td></tr>
-          <tr><td><b>Planning</b></td><td><strong>Integrated program plan</strong><span>Workstreams · milestones · dependencies</span></td><td>Connect product roadmaps and foundation work into one critical path with readiness gates.</td></tr>
-          <tr><td><b>Weekly</b></td><td><strong>Workstream execution</strong><span>Progress · risks · commitments</span></td><td>Review delivery against the plan, resolve risks early, and hold owners to clear commitments.</td></tr>
-          <tr><td><b>Weekly</b></td><td><strong>Cross-product forums</strong><span>API governance · data governance</span></td><td>Resolve API standards, shared data definitions, ownership, quality, and cross-product dependencies before they affect milestones.</td></tr>
-          <tr><td><b>Biweekly + as needed</b></td><td><strong>Leadership decision review</strong><span>Tradeoffs · options · deadlines</span></td><td>Bring leaders the decision required, customer impact, options, recommendation, owner, and deadline.</td></tr>
-          <tr><td><b>At each gate</b></td><td><strong>Readiness + rollout review</strong><span>Security · reliability · operations</span></td><td>Validate production readiness and approve a controlled launch only when exit criteria are met.</td></tr>
-          <tr><td><b>Post-launch + quarterly</b></td><td><strong>Outcome and scaling review</strong><span>Learnings · reuse · next wave</span></td><td>Measure customer outcomes, capture reusable patterns, and sequence the next onboarding wave.</td></tr>
-        </tbody>
-      </table>
-      <div class="governance-proofs">
-        <article><span>Command center</span><b>Fast progress</b><p>Created one place to surface blockers, convene owners, and drive decisions to closure.</p></article>
-        <article><span>Web performance</span><b>≤ 2 days</b><p>Shortened decision turnaround by bringing evidence, options, owners, and deadlines together.</p></article>
-        <article><span>Capability maturity forum</span><b>35 edge cases</b><p>Resolved Intuit-wide capability questions through one clean cross-functional decision forum.</p></article>
-      </div>
     </section>
 
     <section class="slide case-study-slide risks-slide" id="case-risks" data-title="Case study: Risks" data-section="Case study">
