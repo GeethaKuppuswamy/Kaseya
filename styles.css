@@ -182,6 +182,8 @@
 #mm-results .business-enabled span{font-size:13px}
 #mm-results .business-enabled b{font-size:17px;line-height:1.45;color:var(--ink)}
 #mm-results .pride-lead{font-family:"Instrument Serif",serif;font-size:24px;line-height:1.35;color:var(--deep);margin:17px 0 0!important}
+#mm-results .mm-metrics span b{color:var(--deep)}
+#mm-results .mm-metrics .maturity-stage{font-size:46px;line-height:1.12}
 
 /* Personal-slide map accuracy and heading lock */
 .slide.personal .journey-center h2{font-size:clamp(28px,2.7vw,40px)!important;line-height:1.05!important;letter-spacing:-.035em!important;white-space:normal;position:relative;z-index:5}
@@ -221,6 +223,9 @@
 #ias-challenges .challenge-table td:nth-child(2){font-size:13px}
 #ias-challenges .challenge-table td b{font-size:14px}
 #ias-challenges .challenge-table td span{width:23px;height:23px;margin-right:9px;font-size:16px}
+#ias-challenges .challenge-table th{font-size:13px}
+#ias-challenges .challenge-table td,#ias-challenges .challenge-table td:nth-child(2){font-size:15px;line-height:1.34}
+#ias-challenges .challenge-table td b{font-size:15px}
 .case-study-divider:before{content:"";position:absolute;width:48vw;height:48vw;left:-24vw;top:-25vw;border:1px solid rgba(143,177,255,.18);border-radius:50%;box-shadow:0 0 0 8vw rgba(143,177,255,.025),0 0 0 16vw rgba(143,177,255,.018)}
 .case-study-divider .transition-copy h2 em{color:#8fb1ff}
 @media(max-width:900px){#ias-model .opportunity-copy{grid-template-columns:1fr;gap:10px}#ias-model .opportunity-copy p:last-child{padding:10px 0 0;border-left:0;border-top:1px solid rgba(35,108,255,.25)}#ias-challenges .material-mockups{grid-template-columns:1fr}#ias-challenges .material-mockups>article{min-height:0}#ias-challenges .challenge-table{table-layout:auto}}
@@ -260,3 +265,12 @@
 #personal>.section-tag{font-size:16px}
 @media(max-width:900px){.section-tag .section-context{font-size:14px}.section-tag{font-size:14px}.section-tag>span{font-size:15px}}
 @media(max-width:620px){.section-tag .section-context{display:none}}
+
+/* Expanded IAS outcome scorecard */
+#ias-success .success-metric-grid{grid-template-columns:repeat(5,1fr);gap:0;padding:20px 18px}
+#ias-success .success-metric-grid>div{display:block;padding:2px 16px;border-left:1px solid rgba(255,255,255,.2)}
+#ias-success .success-metric-grid>div:first-child{border-left:0}
+#ias-success .success-metric-grid strong{display:block;font-size:39px;margin-bottom:9px}
+#ias-success .success-metric-grid span{display:block;font-size:13px;line-height:1.35}
+#ias-success .success-takeaway{margin:13px 0 0!important;text-align:center;font-family:"Instrument Serif",serif;font-size:21px;color:var(--deep)}
+@media(max-width:900px){#ias-success .success-metric-grid{grid-template-columns:1fr 1fr}#ias-success .success-metric-grid>div{border-left:0;border-top:1px solid rgba(255,255,255,.2);padding:13px}#ias-success .success-metric-grid>div:first-child{border-top:0}}
