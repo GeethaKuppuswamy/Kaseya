@@ -386,3 +386,40 @@
 #case-program .program-table td b{color:var(--ink)}
 #case-program .compact-proof{margin-top:12px!important}
 @media(max-width:900px){#case-program .program-grid{grid-template-columns:1fr}}
+
+/* Slide 4: a simple, unmistakable India-to-California journey */
+#personal .flag-journey{height:210px;aspect-ratio:auto;padding:0;overflow:hidden;background:linear-gradient(180deg,#f8fbff 0%,#eef4ff 100%);border:1px solid rgba(35,108,255,.2)}
+#personal .flag-journey img,
+#personal .flag-journey .map-dot,
+#personal .flag-journey .map-label{display:none}
+#personal .flag-journey .journey-route{inset:16px 0 0}
+#personal .flag-journey .journey-route>path{stroke-width:6;stroke-dasharray:13 11}
+#personal .flag-journey .journey-plane{left:47%;top:34%;font-size:34px;transform:rotate(4deg)}
+#personal .flag-journey>strong{left:50%;top:64%;transform:translateX(-50%);font-size:14px}
+.journey-endpoint{position:absolute;top:34px;z-index:4;display:flex;min-width:120px;flex-direction:column;align-items:center;color:var(--deep)}
+.journey-endpoint .country-flag{font-size:56px;line-height:1;filter:drop-shadow(0 7px 9px rgba(16,27,45,.14))}
+.journey-endpoint b{margin-top:9px;font-size:17px}
+.journey-endpoint small{margin-top:2px;font-size:12px;color:var(--muted)}
+.india-endpoint{left:7%}.usa-endpoint{right:4%}
+@media(max-width:900px){#personal .flag-journey{height:190px}.journey-endpoint .country-flag{font-size:46px}.journey-endpoint b{font-size:15px}}
+
+/* Slide 17: program lifecycle; slide 18 expands the launch-readiness stage */
+#case-governance>h2{font-size:clamp(38px,4vw,54px)!important}
+#case-governance .execution-phases{display:grid;grid-template-columns:1fr 1fr;gap:12px 14px;margin-top:17px!important}
+#case-governance .execution-phases article{position:relative;background:#fff;border:1px solid var(--line);border-left:4px solid var(--blue);padding:15px 18px 14px}
+#case-governance .execution-phases article:nth-child(2){border-left-color:var(--teal)}
+#case-governance .execution-phases article:nth-child(3){border-left-color:var(--coral)}
+#case-governance .execution-phases article:nth-child(4){border-left-color:var(--deep)}
+#case-governance .execution-phases article>span{font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--blue)}
+#case-governance .execution-phases h3{font-size:19px;margin:7px 0 8px}
+#case-governance .execution-phases ul{display:grid;grid-template-columns:1fr 1fr;gap:4px 18px;padding-left:18px;margin:0}
+#case-governance .execution-phases li,
+#case-governance .execution-phases p{font-size:14px;line-height:1.35;color:var(--muted);margin:0}
+#case-governance .phase-launch p{margin-top:8px}
+#case-governance .phase-learning{display:flex;flex-direction:column;justify-content:center}
+#case-governance .governance-proofs{margin-top:10px!important}
+#case-governance .governance-proofs article{padding:9px 12px}
+#case-governance .governance-proofs span{font-size:10px}
+#case-governance .governance-proofs b{font-size:17px}
+#case-governance .governance-proofs p{font-size:12px;line-height:1.28}
+@media(max-width:900px){#case-governance .execution-phases{grid-template-columns:1fr}#case-governance .execution-phases ul{grid-template-columns:1fr}}
