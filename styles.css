@@ -291,11 +291,18 @@
 @media(max-width:900px){#mm-results .expanded-mm-metrics{grid-template-columns:1fr}}
 
 /* Proof point on the delivery-strategy slide */
-#case-outcomes .principle-cards{margin-top:22px}
+#case-outcomes .principle-cards{margin-top:30px}
+#case-outcomes .delivery-flow{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;list-style:none;padding:0;margin-top:34px!important;margin-bottom:0}
+#case-outcomes .delivery-flow li{position:relative;min-height:210px;padding:24px;background:#fff;border:1px solid var(--line);border-top:4px solid var(--blue)}
+#case-outcomes .delivery-flow li:not(:last-child):after{content:"→";position:absolute;top:50%;right:-23px;transform:translateY(-50%);z-index:2;color:var(--blue);font-size:25px;font-weight:700}
+#case-outcomes .delivery-flow span{font-family:"Instrument Serif",serif;font-size:28px;color:var(--blue)}
+#case-outcomes .delivery-flow h3{font-size:23px;margin:24px 0 10px}
+#case-outcomes .delivery-flow p{font-size:17px;line-height:1.45;color:var(--muted);margin:0}
 #case-outcomes .horizon-rail{margin-top:14px!important}
-#case-outcomes .paypal-proof{margin-top:12px!important;padding:11px 16px}
+#case-outcomes .paypal-proof{margin-top:24px!important;padding:15px 18px}
 #case-outcomes .paypal-proof strong{font-size:22px;white-space:nowrap}
 #case-outcomes .paypal-proof p{font-size:14px;line-height:1.35}
+@media(max-width:900px){#case-outcomes .delivery-flow{grid-template-columns:1fr;gap:14px}#case-outcomes .delivery-flow li{min-height:0}#case-outcomes .delivery-flow li:not(:last-child):after{content:"↓";top:auto;right:50%;bottom:-19px;transform:translateX(50%)}}
 
 /* Ensure all six Mid-Market metrics remain visible in a single viewport */
 #mm-results{padding-top:104px;padding-bottom:38px}
