@@ -42,6 +42,7 @@
 .agenda-card li>span{font-size:30px}
 .agenda-card li b{font-size:18px}
 .agenda-card li small{font-size:15px;line-height:1.4}
+.agenda-card li time{align-self:center;min-width:54px;padding:7px 9px;border:1px solid var(--line);border-radius:99px;color:var(--blue);font-size:13px;font-weight:700;text-align:center;white-space:nowrap}
 #story{padding-top:100px;padding-bottom:36px}
 #story .section-tag{display:flex;gap:10px;align-items:center}
 #story .section-tag .section-context{padding-left:12px;border-left:1px solid var(--line);color:var(--blue);font-size:16px;letter-spacing:.08em}
@@ -297,10 +298,40 @@
 #case-outcomes .paypal-proof p{font-size:14px;line-height:1.35}
 
 /* Ensure all six Mid-Market metrics remain visible in a single viewport */
-#mm-results{padding-top:104px;padding-bottom:34px}
-#mm-results .expanded-mm-metrics{gap:9px;margin-top:17px}
-#mm-results .expanded-mm-metrics article{min-height:112px;padding:11px 14px}
-#mm-results .expanded-mm-metrics strong{font-size:34px}
-#mm-results .expanded-mm-metrics .maturity-stage{font-size:28px}
-#mm-results .expanded-mm-metrics span{font-size:13px;line-height:1.3}
-#mm-results .business-enabled{margin-top:11px!important;padding:12px 17px}
+#mm-results{padding-top:104px;padding-bottom:38px}
+#mm-results .pride-lead{max-width:1050px!important}
+#mm-results .pride-lead b{font-size:clamp(36px,3.5vw,48px);line-height:1.12;letter-spacing:-.035em}
+#mm-results .expanded-mm-metrics{gap:12px;margin-top:24px}
+#mm-results .expanded-mm-metrics article{min-height:122px;padding:15px 18px}
+#mm-results .expanded-mm-metrics strong{font-size:46px}
+#mm-results .expanded-mm-metrics .maturity-stage{font-size:38px}
+#mm-results .expanded-mm-metrics span{font-size:16px;line-height:1.36;margin-top:7px}
+#mm-results .business-enabled{margin-top:14px!important;padding:14px 18px}
+#mm-results .business-enabled span{font-size:13px}
+#mm-results .business-enabled b{font-size:17px}
+
+/* Presentation-wide body scale: aligned to the readability of slide 2 */
+.case-study-slide .case-panel-label{font-size:13px}
+.case-study-slide .workstream-list li,
+.case-study-slide .milestone-list p,
+.case-study-slide .readiness-table th,
+.case-study-slide .readiness-table td{font-size:15px}
+.case-study-slide .readiness-checks li,
+.case-study-slide .simple-checks li{font-size:15px;line-height:1.35}
+.case-study-slide .compact-proof p{font-size:14px}
+.case-study-slide .risk-grid p,
+.case-study-slide .outcome-grid li{font-size:14px;line-height:1.4}
+
+/* Slide 18: use the same heading and widget scale as the rest of the deck */
+#case-governance>h2{font-size:clamp(42px,4.5vw,60px)!important}
+#case-governance .governance-thesis{font-size:23px;line-height:1.3;margin:12px 0 15px!important;padding:12px 18px}
+#case-governance .governance-grid{gap:14px}
+#case-governance .governance-grid>article{padding:17px 19px}
+#case-governance .cadence-list li{padding:7px 0}
+#case-governance .cadence-list b{font-size:15px}
+#case-governance .cadence-list span{font-size:15px;line-height:1.35}
+#case-governance .governance-proofs{gap:12px;margin-top:14px!important}
+#case-governance .governance-proofs article{padding:13px 15px}
+#case-governance .governance-proofs span{font-size:12px}
+#case-governance .governance-proofs b{font-size:20px}
+#case-governance .governance-proofs p{font-size:14px;line-height:1.35}
