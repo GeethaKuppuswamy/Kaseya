@@ -357,15 +357,16 @@
         <div class="heatmap-panel">
           <p class="case-panel-label">Readiness heatmap · every participating product</p>
           <table class="readiness-table">
+            <thead><tr><th>Dimension</th><th>Key question</th></tr></thead>
             <tbody>
-              <tr><th>API maturity</th><td>Stable, versioned, documented operations?</td></tr>
-              <tr><th>Identity</th><td>Consistent propagation across boundaries?</td></tr>
-              <tr><th>Authorization</th><td>User, customer, and tenant enforcement?</td></tr>
-              <tr><th>Data</th><td>Reliable entity correlation across products?</td></tr>
-              <tr><th>MCP</th><td>Narrow, discoverable, secure, testable tools?</td></tr>
-              <tr><th>Reliability</th><td>Latency, availability, retries, and failure modes?</td></tr>
-              <tr><th>Observability</th><td>End-to-end request tracing?</td></tr>
-              <tr><th>Security</th><td>Auditability, isolation, exposure, and tool-abuse risks?</td></tr>
+              <tr><th>API maturity</th><td>Are the required operations supported, stable, versioned, and documented?</td></tr>
+              <tr><th>Identity</th><td>Can identity be consistently propagated across platform and product boundaries?</td></tr>
+              <tr><th>Authorization</th><td>Are permissions enforced at the correct user, customer, and tenant levels?</td></tr>
+              <tr><th>Data</th><td>Can entities be reliably correlated across products?</td></tr>
+              <tr><th>MCP</th><td>Are tools narrowly scoped, discoverable, secure, and testable?</td></tr>
+              <tr><th>Reliability</th><td>Are latency, availability, rate limits, retries, and failure modes understood?</td></tr>
+              <tr><th>Observability</th><td>Can a request be traced across the platform and participating products?</td></tr>
+              <tr><th>Security</th><td>Are auditability, data exposure, prompt/tool abuse, and isolation risks addressed?</td></tr>
             </tbody>
           </table>
         </div>
@@ -386,7 +387,6 @@
     <section class="slide case-study-slide governance-slide" id="case-governance" data-title="Case study: Governance" data-section="Case study">
       <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Decision governance</b></div>
       <h2>Governance that makes decisions.</h2>
-      <blockquote class="governance-thesis">Governance exists to resolve decisions and dependencies—not to collect status.</blockquote>
       <div class="governance-grid">
         <article><p class="case-panel-label">Decision cadence</p><ul class="cadence-list"><li><b>Weekly</b><span>Workstream dependency + risk resolution</span></li><li><b>Cross-product</b><span>Interface decisions + delivery commitments</span></li><li><b>Biweekly</b><span>Executive tradeoffs + intervention</span></li><li><b>Quarterly</b><span>Capacity, onboarding waves + roadmap alignment</span></li><li><b>Async</b><span>Outcomes, milestones, dependencies + readiness</span></li></ul></article>
         <article><p class="case-panel-label">Every escalation contains</p><ul class="simple-checks"><li>The decision required</li><li>Customer or milestone impact</li><li>Options considered</li><li>My recommendation</li><li>Decision owner + deadline</li></ul></article>
@@ -401,7 +401,7 @@
 
     <section class="slide case-study-slide risks-slide" id="case-risks" data-title="Case study: Risks" data-section="Case study">
       <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Anticipated risks and challenges</b></div>
-      <h2>Make the risks visible early—<br><em>before they become delivery surprises.</em></h2>
+      <h2>Surface risks early—<br><em>before they become delivery surprises.</em></h2>
       <div class="risk-grid">
         <article><span>01 · Alignment</span><h3>Product roadmaps compete with platform work</h3><p><b>Early signal</b> · Conditional commitments, slipping owners, local priorities overriding shared milestones.</p><p><b>Intervention</b> · One stack rank, explicit capacity tradeoffs, named decision owners, and executive closure dates.</p></article>
         <article><span>02 · Foundation</span><h3>API maturity varies by product</h3><p><b>Early signal</b> · Unversioned endpoints, missing operations, undocumented behavior, or brittle adapters.</p><p><b>Intervention</b> · Readiness heatmap, thin-slice validation, modernization owners, and minimum onboarding gates.</p></article>
