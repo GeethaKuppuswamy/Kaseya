@@ -419,6 +419,8 @@
 .selfserve-tracks p{font-size:14px;line-height:1.35;color:var(--muted);margin:0}
 #ssm-challenges .challenge-table{margin-top:16px}
 #ssm-challenges .challenge-table td{padding-top:10px;padding-bottom:10px}
+#ssm-model .execution-table td{padding-top:9px;padding-bottom:9px}
+#ssm-model .execution-table th{padding-top:9px;padding-bottom:9px}
 
 /* Closing transformation: Process, People and Technology */
 .transformation-slide{background:#eef2f9}
