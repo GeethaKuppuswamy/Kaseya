@@ -361,3 +361,13 @@
 #case-measures .outcome-grid li{font-size:15px;line-height:1.42;margin-bottom:7px}
 #case-measures .outcome-close span{font-size:13px}
 #case-measures .outcome-close b{font-size:17px;line-height:1.4}
+
+/* Slide 16: present program structure as a top-to-bottom sequence */
+#case-program .program-grid{grid-template-columns:1fr;gap:14px;margin-top:18px!important}
+#case-program .workstream-panel,
+#case-program .milestone-panel{padding:16px 20px}
+#case-program .workstream-list{grid-template-columns:repeat(3,1fr);gap:8px}
+#case-program .milestone-list{grid-template-columns:repeat(4,1fr);gap:8px 12px}
+#case-program .milestone-list li:last-child{grid-column:auto}
+#case-program .compact-proof{margin-top:12px!important}
+@media(max-width:900px){#case-program .workstream-list,#case-program .milestone-list{grid-template-columns:1fr}}
