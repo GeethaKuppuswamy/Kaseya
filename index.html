@@ -348,19 +348,38 @@
     </section>
 
     <section class="slide case-study-slide governance-slide" id="case-governance" data-title="Case study: Execution model" data-section="Case study">
-      <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Execution model</b></div>
-      <h2>How I would run the program—<br><em>from setup through scale.</em></h2>
-      <div class="execution-phases" aria-label="Program execution lifecycle">
-        <article class="phase-planning"><span>01 · Planning</span><h3>Build the program foundation</h3><ul><li>Program charter</li><li>Dependencies identified</li><li>Ownership established</li><li>Outcomes defined</li><li>Kickoff meeting</li><li>Control center / binder with execution and communication modes defined</li></ul></article>
-        <article class="phase-execution"><span>02 · Execution</span><h3>Create the operating rhythm</h3><ul><li>Weekly Scrum of Scrums</li><li>Data Governance forum</li><li>API Governance forum</li><li>Leadership decision review / Steering Committee</li></ul></article>
-        <article class="phase-launch"><span>03 · Launch</span><h3>Prove readiness before release</h3><ul><li>Readiness heatmap review</li><li>Readiness gates defined and approved</li></ul><p>The next slide expands the product, security, data, and operational checks behind these gates.</p></article>
-        <article class="phase-learning"><span>04 · Learnings</span><h3>Measure, learn, and scale</h3><p>Review <b>outcomes and scaling</b>, capture reusable patterns, and decide on the next wave.</p></article>
-      </div>
-      <div class="governance-proofs">
-        <article><span>Command center</span><b>Fast progress</b><p>Created one place to surface blockers, convene owners, and drive decisions to closure.</p></article>
-        <article><span>Web performance</span><b>≤ 2 days</b><p>Shortened decision turnaround by bringing evidence, options, owners, and deadlines together.</p></article>
-        <article><span>Capability maturity forum</span><b>35 edge cases</b><p>Resolved Intuit-wide capability questions through one clean cross-functional decision forum.</p></article>
-      </div>
+      <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Program setup</b></div>
+      <h2>Set the program up for clarity—<br><em>before execution begins.</em></h2>
+      <table class="execution-table operating-detail-table setup-table">
+        <thead><tr><th>Mechanism</th><th>Format</th><th>Who is involved</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Program charter</strong></td><td><span class="format-pill doc">Live document</span></td><td>Sponsor · Product · Engineering · Architecture · TPM</td><td>Align on customer outcome, scope, decision rights, constraints, and success measures.</td></tr>
+          <tr><td><strong>Outcome framework</strong></td><td><span class="format-pill doc">Live scorecard</span></td><td>Product · Customer teams · Analytics · TPM</td><td>Define the lighthouse outcome, acceptance criteria, KPIs, and measurable exit criteria.</td></tr>
+          <tr><td><strong>Dependency map</strong></td><td><span class="format-pill workshop">Working session + live map</span></td><td>Product teams · Platform · Security · Data · TPM</td><td>Expose the critical path, cross-product dependencies, and reusable foundational capabilities.</td></tr>
+          <tr><td><strong>Ownership model</strong></td><td><span class="format-pill doc">Live document</span></td><td>Functional leaders · Workstream leads · TPM</td><td>Name the owner, approver, contributors, and escalation path for every major deliverable.</td></tr>
+          <tr><td><strong>Program kickoff</strong></td><td><span class="format-pill meeting">Live meeting</span></td><td>All workstream leaders and accountable partners</td><td>Confirm milestones, ways of working, communication paths, commitments, and immediate actions.</td></tr>
+          <tr><td><strong>Control center / binder</strong></td><td><span class="format-pill async">Async hub + live documents</span></td><td>Entire program team and leadership</td><td>Create one source of truth for plans, dependencies, risks/issues, decisions, status, and communication.</td></tr>
+        </tbody>
+      </table>
+      <aside class="proof-bar compact-proof"><span>Proven at Intuit</span><strong>Command center → faster execution</strong><p>Created one place to surface blockers, convene owners, and drive decisions to closure.</p></aside>
+    </section>
+
+    <section class="slide case-study-slide governance-slide" id="case-cadence" data-title="Case study: Operating cadence" data-section="Case study">
+      <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Execution, launch + learning</b></div>
+      <h2>Run the program through a deliberate<br><em>operating cadence.</em></h2>
+      <table class="execution-table operating-detail-table cadence-detail-table">
+        <thead><tr><th>Mechanism</th><th>Format</th><th>Who is involved</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Scrum of Scrums</strong><span>Weekly</span></td><td><span class="format-pill meeting">Live meeting</span></td><td>Workstream leads · Product · Engineering · TPM</td><td>Review progress, dependencies, risks/issues, decisions needed, and weekly commitments.</td></tr>
+          <tr><td><strong>Program update</strong><span>Weekly</span></td><td><span class="format-pill async">Async dashboard</span></td><td>Program team · Leadership · GTM partners</td><td>Give one current view of milestones, outcomes, top risks, dependencies, and open decisions.</td></tr>
+          <tr><td><strong>Data Governance forum</strong><span>Weekly / as needed</span></td><td><span class="format-pill workshop">Working forum</span></td><td>Data owners · Product · Engineering · Security · TPM</td><td>Resolve definitions, mappings, ownership, lineage, freshness, and data-quality thresholds.</td></tr>
+          <tr><td><strong>API Governance forum</strong><span>Weekly / as needed</span></td><td><span class="format-pill workshop">Working forum</span></td><td>Architecture · API and product engineering · Security · TPM</td><td>Lock interface contracts, standards, versioning, ownership, and backward-compatibility decisions.</td></tr>
+          <tr><td><strong>Steering Committee</strong><span>Biweekly + escalations</span></td><td><span class="format-pill meeting">Decision meeting</span></td><td>Executive sponsor · Product and Engineering leaders · TPM</td><td>Resolve tradeoffs and escalations with the decision, impact, options, recommendation, owner, and deadline.</td></tr>
+          <tr><td><strong>Readiness review</strong><span>At every launch gate</span></td><td><span class="format-pill meeting">Gate review</span></td><td>Product · Engineering · Security · Reliability · Support · TPM</td><td>Review the readiness heatmap, validate launch gates, and make a controlled go/no-go decision.</td></tr>
+          <tr><td><strong>Outcomes + scaling review</strong><span>Post-launch</span></td><td><span class="format-pill workshop">Learning review</span></td><td>Product · Customer teams · Operations · Platform leaders</td><td>Review outcomes, capture reusable patterns and lessons, and decide on the next onboarding wave.</td></tr>
+        </tbody>
+      </table>
+      <div class="cadence-proofs"><span><b>≤ 2 days</b> decision turnaround in Web Performance</span><span><b>35</b> Intuit-wide edge cases resolved through the Capability Maturity forum</span></div>
     </section>
 
     <section class="slide case-study-slide readiness-slide" id="case-readiness" data-title="Case study: Readiness" data-section="Case study">
@@ -408,22 +427,6 @@
         <article><span>06 · Operations</span><h3>The happy path masks production risk</h3><p><b>Early signal</b> · Missing SLOs, tracing, rate limits, degraded modes, or incident ownership.</p><p><b>Intervention</b> · Production-readiness gates, failure testing, controlled rollout, kill switches, and exit criteria.</p></article>
       </div>
       <aside class="risk-principle"><span>My role as Principal TPM</span><b>Turn hidden assumptions into owned risks, time-bound decisions, and measurable readiness.</b></aside>
-    </section>
-
-    <section class="slide case-study-slide outcomes-measure-slide" id="case-measures" data-title="Case study: Outcomes" data-section="Case study">
-      <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Outcomes + success measures</b></div>
-      <h2>Success is a trusted customer workflow—<br><em>and a repeatable platform model.</em></h2>
-      <div class="lighthouse-outcome">
-        <span>Lighthouse outcome</span>
-        <p>A customer can ask, <b>“Which clients have critical tickets, failed backups, and vulnerable endpoints?”</b> and receive one permission-aware, traceable response synthesized across three products.</p>
-      </div>
-      <div class="outcome-grid">
-        <article><span>01</span><h3>Customer value</h3><ul><li>Task completion and time-to-insight</li><li>Cohort adoption and repeat usage</li><li>Trust, relevance, and response quality</li></ul></article>
-        <article><span>02</span><h3>Platform leverage</h3><ul><li>Reusable tools, contracts, and mappings</li><li>API capability coverage</li><li>Products ready for the next wave</li></ul></article>
-        <article><span>03</span><h3>Predictable delivery</h3><ul><li>Milestone confidence and dependency burn-down</li><li>Decision closure time</li><li>Reduced onboarding lead time</li></ul></article>
-        <article><span>04</span><h3>Production trust</h3><ul><li>Agreed latency and availability SLOs</li><li>Authorization and tenant-isolation validation</li><li>Trace coverage, incident rate, and safe degradation</li></ul></article>
-      </div>
-      <aside class="outcome-close"><span>Definition of done</span><b>Customer value proven. Production gates passed. Reusable patterns captured. Next wave ready.</b></aside>
     </section>
 
     <section class="slide case-study-slide ninety-day-slide" id="case-90-days" data-title="30 / 60 / 90 day plan" data-section="Case study">
