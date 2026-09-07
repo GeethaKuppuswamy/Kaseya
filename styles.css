@@ -288,3 +288,19 @@
 #mm-results .expanded-mm-metrics .maturity-stage{font-size:31px}
 #mm-results .expanded-mm-metrics span{font-size:14px;line-height:1.35;margin-top:5px}
 @media(max-width:900px){#mm-results .expanded-mm-metrics{grid-template-columns:1fr}}
+
+/* Proof point on the delivery-strategy slide */
+#case-outcomes .principle-cards{margin-top:22px}
+#case-outcomes .horizon-rail{margin-top:14px!important}
+#case-outcomes .paypal-proof{margin-top:12px!important;padding:11px 16px}
+#case-outcomes .paypal-proof strong{font-size:22px;white-space:nowrap}
+#case-outcomes .paypal-proof p{font-size:14px;line-height:1.35}
+
+/* Ensure all six Mid-Market metrics remain visible in a single viewport */
+#mm-results{padding-top:104px;padding-bottom:34px}
+#mm-results .expanded-mm-metrics{gap:9px;margin-top:17px}
+#mm-results .expanded-mm-metrics article{min-height:112px;padding:11px 14px}
+#mm-results .expanded-mm-metrics strong{font-size:34px}
+#mm-results .expanded-mm-metrics .maturity-stage{font-size:28px}
+#mm-results .expanded-mm-metrics span{font-size:13px;line-height:1.3}
+#mm-results .business-enabled{margin-top:11px!important;padding:12px 17px}
