@@ -302,7 +302,13 @@
 #case-outcomes .paypal-proof{margin-top:24px!important;padding:15px 18px}
 #case-outcomes .paypal-proof strong{font-size:22px;white-space:nowrap}
 #case-outcomes .paypal-proof p{font-size:14px;line-height:1.35}
+#case-outcomes .delivery-proofs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px!important}
+#case-outcomes .delivery-proofs aside{display:grid;grid-template-columns:auto 1fr;gap:7px 16px;align-items:center;padding:14px 17px;background:var(--deep);color:#fff}
+#case-outcomes .delivery-proofs span{font-size:12px;text-transform:uppercase;letter-spacing:.11em;color:#8fb1ff}
+#case-outcomes .delivery-proofs strong{font-size:20px;line-height:1.15;text-align:right}
+#case-outcomes .delivery-proofs p{grid-column:1/-1;font-size:14px;line-height:1.38;color:rgba(255,255,255,.72);margin:0}
 @media(max-width:900px){#case-outcomes .delivery-flow{grid-template-columns:1fr;gap:14px}#case-outcomes .delivery-flow li{min-height:0}#case-outcomes .delivery-flow li:not(:last-child):after{content:"↓";top:auto;right:50%;bottom:-19px;transform:translateX(50%)}}
+@media(max-width:900px){#case-outcomes .delivery-proofs{grid-template-columns:1fr}}
 
 /* Ensure all six Mid-Market metrics remain visible in a single viewport */
 #mm-results{padding-top:104px;padding-bottom:38px}
