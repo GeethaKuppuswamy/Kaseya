@@ -274,3 +274,17 @@
 #ias-success .success-metric-grid span{display:block;font-size:13px;line-height:1.35}
 #ias-success .success-takeaway{margin:13px 0 0!important;text-align:center;font-family:"Instrument Serif",serif;font-size:21px;color:var(--deep)}
 @media(max-width:900px){#ias-success .success-metric-grid{grid-template-columns:1fr 1fr}#ias-success .success-metric-grid>div{border-left:0;border-top:1px solid rgba(255,255,255,.2);padding:13px}#ias-success .success-metric-grid>div:first-child{border-top:0}}
+
+/* Corrected operating artifacts and expanded Mid-Market outcomes */
+#ias-challenges .decision-columns{grid-template-columns:.35fr 1.35fr .85fr 1fr .65fr;gap:4px}
+#ias-challenges .decision-columns i{font-size:8px;line-height:1.15}
+#ias-challenges .decision-entry{grid-template-columns:.35fr 1.35fr .85fr 1fr .65fr;gap:4px;font-size:10px}
+#ias-challenges .decision-entry time{font-size:10px;color:var(--muted);white-space:nowrap}
+#mm-results .pride-lead{margin-top:0!important}
+#mm-results .pride-lead b{font-family:"DM Sans",sans-serif;font-size:25px;line-height:1.3;color:var(--deep)}
+#mm-results .expanded-mm-metrics{grid-template-columns:repeat(3,1fr);gap:11px;margin-top:20px}
+#mm-results .expanded-mm-metrics article{padding:13px 15px}
+#mm-results .expanded-mm-metrics strong{font-size:38px;line-height:1}
+#mm-results .expanded-mm-metrics .maturity-stage{font-size:31px}
+#mm-results .expanded-mm-metrics span{font-size:14px;line-height:1.35;margin-top:5px}
+@media(max-width:900px){#mm-results .expanded-mm-metrics{grid-template-columns:1fr}}
