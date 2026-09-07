@@ -349,6 +349,12 @@
 #case-governance .governance-proofs span{font-size:12px}
 #case-governance .governance-proofs b{font-size:20px}
 #case-governance .governance-proofs p{font-size:14px;line-height:1.35}
+#case-governance .case-execution-table{margin-top:18px}
+#case-governance .case-execution-table th:nth-child(1){width:16%}
+#case-governance .case-execution-table th:nth-child(2){width:29%}
+#case-governance .case-execution-table td{padding-top:9px;padding-bottom:9px;font-size:15px;line-height:1.32}
+#case-governance .case-execution-table td strong{font-size:16px}
+#case-governance .governance-proofs{margin-top:12px!important}
 
 /* Slide 17: let the heatmap use the full panel height instead of pooling space below the table */
 #case-readiness .readiness-grid{align-items:stretch}
