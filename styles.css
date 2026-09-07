@@ -423,3 +423,26 @@
 #case-governance .governance-proofs b{font-size:17px}
 #case-governance .governance-proofs p{font-size:12px;line-height:1.28}
 @media(max-width:900px){#case-governance .execution-phases{grid-template-columns:1fr}#case-governance .execution-phases ul{grid-template-columns:1fr}}
+
+/* Detailed TPM operating model across slides 17–18 */
+#case-governance .operating-detail-table,
+#case-cadence .operating-detail-table{margin-top:16px}
+.operating-detail-table th:nth-child(1){width:18%}
+.operating-detail-table th:nth-child(2){width:16%}
+.operating-detail-table th:nth-child(3){width:25%}
+.operating-detail-table th:nth-child(4){width:41%}
+.operating-detail-table td{padding:9px 11px;font-size:14px;line-height:1.32;color:var(--ink);vertical-align:top}
+.operating-detail-table td:nth-child(3){border-right:1px solid var(--line)}
+.operating-detail-table td strong{font-size:16px;line-height:1.25;color:var(--deep)}
+.operating-detail-table td>strong+span:not(.format-pill){margin-top:3px;font-size:11px;color:var(--blue)}
+.operating-detail-table .format-pill{display:inline-block;padding:5px 7px;border-radius:3px;font-size:11px;line-height:1.2;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:#e9efff;color:var(--blue)}
+.operating-detail-table .format-pill.meeting{background:#e9f6f4;color:#14766d}
+.operating-detail-table .format-pill.async{background:#f5edf9;color:#75428c}
+.operating-detail-table .format-pill.workshop{background:#fff0eb;color:#a84b34}
+#case-governance .compact-proof{margin-top:10px!important}
+#case-cadence>h2{font-size:clamp(38px,4vw,54px)!important}
+#case-cadence .cadence-detail-table td{padding-top:7px;padding-bottom:7px}
+.cadence-proofs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px!important}
+.cadence-proofs span{padding:10px 14px;background:var(--deep);color:rgba(255,255,255,.76);font-size:13px;line-height:1.35}
+.cadence-proofs b{color:#fff;font-size:18px;margin-right:5px}
+@media(max-width:900px){.operating-detail-table{table-layout:auto}.operating-detail-table th:nth-child(n){width:auto}.cadence-proofs{grid-template-columns:1fr}}
