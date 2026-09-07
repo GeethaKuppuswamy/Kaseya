@@ -335,3 +335,22 @@
 #case-governance .governance-proofs span{font-size:12px}
 #case-governance .governance-proofs b{font-size:20px}
 #case-governance .governance-proofs p{font-size:14px;line-height:1.35}
+
+/* Slide 17: let the heatmap use the full panel height instead of pooling space below the table */
+#case-readiness .readiness-grid{align-items:stretch}
+#case-readiness .heatmap-panel{display:flex;flex-direction:column}
+#case-readiness .readiness-table{height:100%}
+#case-readiness .readiness-table th,
+#case-readiness .readiness-table td{padding-top:10px;padding-bottom:10px}
+#case-readiness .production-panel{display:flex;flex-direction:column}
+#case-readiness .readiness-checks{flex:1;grid-auto-rows:1fr}
+
+/* Slide 20: match the presentation's standard content scale */
+#case-measures .lighthouse-outcome>span{font-size:14px}
+#case-measures .lighthouse-outcome p{font-size:24px;line-height:1.32}
+#case-measures .outcome-grid article{padding:20px}
+#case-measures .outcome-grid article>span{font-size:28px}
+#case-measures .outcome-grid h3{font-size:20px;margin:13px 0 9px}
+#case-measures .outcome-grid li{font-size:15px;line-height:1.42;margin-bottom:7px}
+#case-measures .outcome-close span{font-size:13px}
+#case-measures .outcome-close b{font-size:17px;line-height:1.4}
