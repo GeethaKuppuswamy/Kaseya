@@ -532,7 +532,8 @@
 #case-governance .compact-proof{margin-top:10px!important}
 #case-cadence>h2{font-size:clamp(38px,4vw,54px)!important}
 #case-cadence .cadence-detail-table td{padding-top:7px;padding-bottom:7px}
-.cadence-proofs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:10px!important}
+.cadence-proofs{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px!important}
 .cadence-proofs span{padding:10px 14px;background:var(--deep);color:rgba(255,255,255,.76);font-size:13px;line-height:1.35}
 .cadence-proofs b{color:#fff;font-size:18px;margin-right:5px}
+#case-cadence .launch-learn-row td{background:#eaf2ff;border-top-color:#b8cff8}
 @media(max-width:900px){.operating-detail-table{table-layout:auto}.operating-detail-table th:nth-child(n){width:auto}.cadence-proofs{grid-template-columns:1fr}}
