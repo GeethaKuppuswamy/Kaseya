@@ -70,8 +70,8 @@
 .timeline-top{height:180px}
 .timeline-bottom{height:148px}
 .timeline-stories article{grid-column:var(--step);text-align:center;align-self:end;padding:0 5px}
-.timeline-top article{padding-bottom:18px}
-.timeline-bottom article{align-self:start}
+.timeline-top article{padding-bottom:40px}
+.timeline-bottom article{align-self:start;padding-top:40px}
 .timeline-stories small{display:block;color:var(--blue);font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
 .timeline-stories h3{font-size:17px;line-height:1.2;margin:7px 0 6px}
 .timeline-stories p{margin:0;color:var(--muted);font-size:14px;line-height:1.3}
