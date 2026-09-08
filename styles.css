@@ -67,6 +67,8 @@
 .career-journey-slide>h2{font-size:clamp(38px,4vw,54px)!important}
 .career-timeline{margin-top:24px!important}
 .timeline-stories{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;height:158px}
+.timeline-top{height:180px}
+.timeline-bottom{height:148px}
 .timeline-stories article{grid-column:var(--step);text-align:center;align-self:end;padding:0 5px}
 .timeline-bottom article{align-self:start}
 .timeline-stories small{display:block;color:var(--blue);font-size:12px;font-weight:700;letter-spacing:.07em;text-transform:uppercase}
