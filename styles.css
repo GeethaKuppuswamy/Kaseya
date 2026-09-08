@@ -489,7 +489,7 @@
 .cadence-spectrum i{font-style:normal;color:var(--blue);font-size:18px}
 #case-cadence .cadence-detail-table{margin-top:10px}
 #case-cadence .cadence-detail-table td{padding-top:7px;padding-bottom:7px}
-.risk-experience{margin:12px 0 0!important;padding:11px 15px;background:#e9efff;border-left:4px solid var(--blue);font-size:16px;line-height:1.4;color:var(--deep);font-weight:600}
+.risk-experience{width:min(1192px,calc(100% - 48px))!important;margin:12px auto 0!important;transform:translateX(24px);padding:11px 15px;background:#e9efff;border-left:4px solid var(--blue);font-size:16px;line-height:1.4;color:var(--deep);font-weight:600}
 #case-risks .risk-grid{margin-top:14px!important}
 .closing-transition .transition-copy h2 em{color:#8fb1ff}
 
