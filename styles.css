@@ -598,3 +598,42 @@
   .tradeoff-model{grid-template-columns:1fr}
   .outcome-scorecard-slide .outcome-grid{grid-template-columns:1fr}
 }
+
+/* Slide 19: decision model integrated into the operating cadence */
+#case-cadence{padding-top:98px;padding-bottom:24px}
+#case-cadence>h2{font-size:clamp(36px,3.7vw,50px)!important}
+#case-cadence .operating-detail-table{margin-top:8px}
+#case-cadence .operating-detail-table td{padding:5px 9px;font-size:14px;line-height:1.22}
+#case-cadence .operating-detail-table td strong{font-size:15px}
+#case-cadence .cadence-tradeoff{margin-top:6px!important;gap:5px}
+#case-cadence .cadence-tradeoff>p,
+#case-cadence .cadence-tradeoff>article{padding:6px 8px}
+#case-cadence .cadence-proofs{margin-top:6px!important;gap:7px}
+#case-cadence .cadence-proofs span{padding:7px 10px;font-size:12px;line-height:1.25}
+#case-cadence .cadence-proofs b{font-size:16px}
+
+/* Slide 22: operating-model transformation plus measurable outcomes */
+#transformation{padding-top:100px;padding-bottom:28px}
+#transformation>h2{font-size:clamp(37px,3.9vw,52px)!important}
+#transformation .transformation-grid{gap:13px;margin-top:16px!important}
+#transformation .transformation-grid>article{padding:14px}
+#transformation .transformation-axis{padding-bottom:9px}
+#transformation .transformation-axis h3{font-size:20px}
+#transformation .from-to{gap:5px;margin-top:9px}
+#transformation .from-to>div{padding:8px 10px}
+#transformation .from-to p{font-size:14px;line-height:1.3}
+#transformation .from-to i{font-size:16px}
+.outcome-measures-strip{display:grid;grid-template-columns:1.12fr repeat(4,1fr);gap:7px;margin-top:11px!important}
+.outcome-measures-strip>p,
+.outcome-measures-strip>article{margin:0;padding:9px 10px;background:#fff;border:1px solid var(--line)}
+.outcome-measures-strip>p{display:flex;flex-direction:column;justify-content:center;background:var(--deep);color:#fff}
+.outcome-measures-strip>p span{text-transform:uppercase;letter-spacing:.09em;font-size:10px;color:#8fb1ff}
+.outcome-measures-strip>p b{font-size:14px;margin-top:3px}
+.outcome-measures-strip>article{border-top:3px solid var(--blue)}
+.outcome-measures-strip>article:nth-child(3){border-top-color:var(--teal)}
+.outcome-measures-strip>article:nth-child(4){border-top-color:var(--coral)}
+.outcome-measures-strip>article:nth-child(5){border-top-color:var(--deep)}
+.outcome-measures-strip>article b{display:block;font-size:14px;color:var(--deep);margin-bottom:4px}
+.outcome-measures-strip>article span{display:block;font-size:12px;line-height:1.25;color:var(--muted)}
+
+@media(max-width:900px){.outcome-measures-strip{grid-template-columns:1fr}}
