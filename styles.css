@@ -637,3 +637,111 @@
 .outcome-measures-strip>article span{display:block;font-size:12px;line-height:1.25;color:var(--muted)}
 
 @media(max-width:900px){.outcome-measures-strip{grid-template-columns:1fr}}
+
+/* Unified presentation typography — one hierarchy across every slide */
+:root{
+  --type-slide-title:56px;
+  --type-panel-title:18px;
+  --type-body:15px;
+  --type-label:13px;
+  --type-micro:12px;
+}
+
+/* Standard content-slide headings. Transition, cover, and closing statements stay intentionally larger. */
+.slide:not(.cover):not(.chapter):not(.portfolio-transition):not(.close)>h2,
+.slide:not(.cover):not(.chapter):not(.portfolio-transition):not(.close) .case-header h2,
+.slide:not(.cover):not(.chapter):not(.portfolio-transition):not(.close) .career-intro h2{
+  font-size:clamp(42px,4.25vw,var(--type-slide-title))!important;
+  line-height:1.03!important;
+}
+
+/* Repeated labels and subtitles */
+.section-tag,
+.section-tag .section-context,
+.card-label,
+.case-panel-label,
+.proof-bar>span,
+.governance-proofs span,
+.risk-grid article>span,
+.day-number span,
+.risk-principle span,
+.outcome-close span{
+  font-size:var(--type-label)!important;
+}
+
+/* Panel titles and primary widget copy */
+.story-point h3,
+.leadership-cards h3,
+.context-grid h3,
+.selfserve-tracks h3,
+.mm-system-grid h3,
+.delivery-flow h3,
+.transformation-axis h3,
+.risk-grid h3,
+.outcome-grid h3,
+.day-plan h3,
+.operating-model h3{
+  font-size:var(--type-panel-title)!important;
+}
+
+/* Tables use a consistent header/body rhythm. */
+.challenge-table th,
+.execution-table th,
+.pushback-table th,
+.program-table thead th,
+.readiness-table thead th,
+.operating-detail-table thead th{
+  font-size:var(--type-label)!important;
+  line-height:1.25!important;
+}
+.challenge-table td,
+.execution-table td,
+.pushback-table td,
+.program-table td,
+.readiness-table tbody th,
+.readiness-table tbody td,
+.operating-detail-table td{
+  font-size:var(--type-body)!important;
+  line-height:1.3!important;
+}
+
+/* Dense case-study widgets: readable without changing their information hierarchy. */
+#case-program .critical-path-block span{font-size:var(--type-label)!important}
+#case-program .critical-path-block b{font-size:14px!important;line-height:1.3}
+#case-program .critical-chain li{font-size:12px!important;line-height:1.22!important;min-height:42px}
+.operating-detail-table td strong{font-size:16px!important}
+.operating-detail-table td>strong+span:not(.format-pill),
+.operating-detail-table .format-pill{font-size:12px!important}
+#case-cadence .cadence-proofs span{font-size:14px!important;line-height:1.3!important}
+#case-cadence .cadence-proofs b{font-size:18px!important}
+.tradeoff-model>p span,
+.outcome-measures-strip>p span{font-size:12px!important}
+.tradeoff-model>p b,
+.outcome-measures-strip>p b{font-size:15px!important}
+.tradeoff-model>article b,
+.outcome-measures-strip>article b{font-size:14px!important}
+.tradeoff-model>article span,
+.outcome-measures-strip>article span{font-size:13px!important;line-height:1.28!important}
+#case-readiness .readiness-definition b{font-size:14px!important}
+#case-readiness .readiness-definition span{font-size:13px!important;line-height:1.24!important}
+#case-readiness .readiness-checks li{font-size:14px!important;line-height:1.25!important}
+#case-readiness .compact-proof p{font-size:14px!important;line-height:1.3!important}
+.risk-grid p{font-size:14px!important;line-height:1.38!important}
+#transformation .from-to b{font-size:12px!important}
+#transformation .from-to p{font-size:15px!important;line-height:1.32!important}
+
+/* Earlier slides follow the same label/body scale too. */
+.career-timeline small{font-size:13px!important}
+.career-timeline p,
+.selfserve-tracks p,
+.framework-grid p,
+.system-map p,
+.day-output{font-size:14px!important;line-height:1.4!important}
+#ssm-success .success-metric-grid span{font-size:14px!important}
+#ssm-challenges .decision-columns i,
+#ssm-challenges .decision-entry,
+#ssm-challenges .decision-entry time{font-size:11px!important}
+
+@media(max-width:900px){
+  :root{--type-slide-title:48px;--type-panel-title:18px;--type-body:15px;--type-label:13px}
+}
