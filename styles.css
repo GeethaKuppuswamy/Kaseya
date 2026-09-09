@@ -654,6 +654,16 @@
   font-size:clamp(42px,4.25vw,var(--type-slide-title))!important;
   line-height:1.03!important;
 }
+#personal>h2,
+#ssm-challenges>h2,
+#case-program>h2,
+#case-governance>h2,
+#case-cadence>h2,
+#case-readiness>h2,
+#transformation>h2{
+  font-size:clamp(42px,4.25vw,var(--type-slide-title))!important;
+  line-height:1.03!important;
+}
 
 /* Repeated labels and subtitles */
 .section-tag,
