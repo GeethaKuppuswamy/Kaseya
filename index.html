@@ -323,6 +323,11 @@
     <section class="slide case-study-slide outcomes-slide" id="case-outcomes" data-title="Case study: Outcomes" data-section="Case study">
       <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Delivery strategy</b></div>
       <h2>Start with a trusted cross-product experience.<br><em>Build the platform through delivery.</em></h2>
+      <div class="lighthouse-journey">
+        <span>Lighthouse customer journey</span>
+        <p>“Which of my clients have critical tickets, failed backups, and vulnerable endpoints?”</p>
+        <small>One trusted answer across ticketing, backup, and endpoint security—with correct customer access and traceable sources.</small>
+      </div>
       <ol class="delivery-flow" aria-label="Four-step delivery approach">
         <li><span>01</span><h3>Prove</h3><p>Prove one valuable cross-product experience.</p></li>
         <li><span>02</span><h3>Build</h3><p>Build the minimum reusable foundation required to support it safely.</p></li>
@@ -338,6 +343,12 @@
     <section class="slide case-study-slide program-slide" id="case-program" data-title="Case study: Program" data-section="Case study">
       <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Program architecture</b></div>
       <h2>Turn the strategy into an executable program.</h2>
+      <div class="critical-path-block">
+        <div><span>Illustrative lighthouse critical path</span><b>Any red dependency on this path becomes a program-level priority.</b></div>
+        <ol class="critical-chain" aria-label="Lighthouse journey critical path">
+          <li>Customer question</li><li>Required product operations</li><li>API readiness</li><li>Identity + access</li><li>Data correlation</li><li>MCP orchestration</li><li>End-to-end validation</li><li>Controlled launch</li>
+        </ol>
+      </div>
       <div class="program-grid">
         <div class="workstream-panel">
           <p class="case-panel-label">Six integrated workstreams</p>
@@ -419,6 +430,7 @@
               <tr><th>Authorization</th><td>Are permissions enforced at the correct user, customer, and tenant levels?</td></tr>
               <tr><th>Data</th><td>Can entities be reliably correlated across products?</td></tr>
               <tr><th>MCP</th><td>Are tools narrowly scoped, discoverable, secure, and testable?</td></tr>
+              <tr><th>Infrastructure</th><td>Can environments, capacity, deployment, and recovery support the end-to-end journey?</td></tr>
               <tr><th>Reliability</th><td>Are latency, availability, rate limits, retries, and failure modes understood?</td></tr>
               <tr><th>Observability</th><td>Can a request be traced across the platform and participating products?</td></tr>
               <tr><th>Security</th><td>Are auditability, data exposure, prompt/tool abuse, and isolation risks addressed?</td></tr>
@@ -427,6 +439,7 @@
         </div>
         <div class="production-panel">
           <p class="case-panel-label">Production-readiness gates</p>
+          <div class="readiness-definition"><div><b>Feature complete</b><span>The customer journey works.</span></div><i>≠</i><div><b>Production ready</b><span>It remains secure, observable, and recoverable when reality intervenes.</span></div></div>
           <ul class="readiness-checks">
             <li>Performance and failure testing</li><li>Customer data separation + access controls</li>
             <li>Data-quality thresholds</li><li>Audit trails + distributed tracing</li>
@@ -450,27 +463,26 @@
         <article><span>05 · Scale</span><h3>Onboarding demand outruns the foundation</h3><p><b>Early signal</b> · One-off integrations multiply while common capabilities remain unfinished.</p><p><b>Intervention</b> · Balance customer value, readiness, reuse, risk, and capacity when sequencing each wave—with shared standards and reviews to prevent drift.</p></article>
         <article><span>06 · Operations</span><h3>The happy path masks production risk</h3><p><b>Early signal</b> · Missing SLOs, tracing, rate limits, degraded modes, or incident ownership.</p><p><b>Intervention</b> · Production-readiness gates, failure testing, controlled rollout, kill switches, and exit criteria.</p></article>
       </div>
-      <aside class="risk-principle"><span>My role as Principal TPM</span><b>Turn hidden assumptions into owned risks, time-bound decisions, and measurable readiness.</b></aside>
+      <div class="tradeoff-model">
+        <p><span>Leadership decision rule</span><b>Make the cutline explicit</b></p>
+        <article><b>Deliver now</b><span>High customer value + sufficient readiness</span></article>
+        <article><b>Invest first</b><span>High value + unsafe or incomplete foundation</span></article>
+        <article><b>Build once</b><span>Capability is reusable across multiple waves</span></article>
+        <article><b>Defer</b><span>Low value, readiness, or foundational reuse</span></article>
+      </div>
     </section>
 
-    <section class="slide transformation-slide" id="transformation" data-title="Process, People + Technology" data-section="Case study">
-      <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Case-study outcome</b></div>
-      <h2>Align process, people, and technology<br><em>to accelerate outcomes.</em></h2>
-      <div class="transformation-grid">
-        <article>
-          <div class="transformation-axis"><span>01</span><h3>Process</h3></div>
-          <div class="from-to"><div><b>From</b><p>Product-specific roadmaps, local escalation paths, and varied launch criteria.</p></div><i>→</i><div><b>To</b><p>One integrated portfolio, explicit decisions, and repeatable readiness gates.</p></div></div>
-        </article>
-        <article>
-          <div class="transformation-axis"><span>02</span><h3>People</h3></div>
-          <div class="from-to"><div><b>From</b><p>Distributed ownership, multiple communication paths, and team-specific operating rhythms.</p></div><i>→</i><div><b>To</b><p>Clear decision rights, mirrored owners, and teams empowered to resolve dependencies.</p></div></div>
-        </article>
-        <article>
-          <div class="transformation-axis"><span>03</span><h3>Technology</h3></div>
-          <div class="from-to"><div><b>From</b><p>Product-specific integrations, APIs, data definitions, and monitoring approaches.</p></div><i>→</i><div><b>To</b><p>Reusable platform primitives, governed APIs and data, and secure observable services.</p></div></div>
-        </article>
+    <section class="slide transformation-slide outcome-scorecard-slide" id="transformation" data-title="Case study: Success measures" data-section="Case study">
+      <div class="section-tag"><span>04</span> Kaseya Unified Platform <b class="section-context">Outcomes and success measures</b></div>
+      <h2>Measure the customer outcome—<br><em>and whether the platform is getting easier to scale.</em></h2>
+      <div class="lighthouse-outcome"><span>Definition of success</span><p>A trusted cross-product answer for customers today—and a faster, safer onboarding wave tomorrow.</p></div>
+      <div class="outcome-grid">
+        <article><span>01</span><h3>Customer</h3><ul><li>Answer accuracy and completeness</li><li>Usefulness and repeat usage in the controlled cohort</li><li>Time to reach the cross-product insight</li></ul></article>
+        <article><span>02</span><h3>Trust</h3><ul><li>Authorization and customer-data separation pass rate</li><li>Traceable sources, actions, and audit events</li><li>Security and data-quality thresholds met</li></ul></article>
+        <article><span>03</span><h3>Delivery</h3><ul><li>Milestone predictability and dependency closure</li><li>Decision turnaround and time-to-resolve red risks</li><li>Controlled launch exit criteria achieved</li></ul></article>
+        <article><span>04</span><h3>Scale</h3><ul><li>Product onboarding lead time and effort</li><li>Reuse of APIs, data contracts, and MCP patterns</li><li>Wave-over-wave reduction in exceptions and drift</li></ul></article>
       </div>
-      <aside class="transformation-close"><span>The TPM outcome</span><b>A system that becomes easier to run—and faster to scale—with every delivery wave.</b></aside>
+      <aside class="outcome-close"><span>TPM discipline</span><b>Baseline during discovery. Set targets in the charter. Review outcomes at every milestone and before the next wave.</b></aside>
     </section>
 
     <section class="slide portfolio-transition closing-transition" id="closing-transition" data-title="Closing" data-section="Closing">
