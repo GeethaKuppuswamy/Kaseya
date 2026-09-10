@@ -465,9 +465,9 @@
         <thead><tr><th>Anticipated risk</th><th>How I would mitigate it</th></tr></thead>
         <tbody>
           <tr><td><b>Product roadmaps compete with platform work</b></td><td>Create one stack-ranked priority list, make capacity tradeoffs explicit, and assign decision owners and closure dates.</td></tr>
-          <tr><td><b>API maturity varies by product</b></td><td>Use the readiness heatmap and a thin slice to expose gaps early; assign modernization owners and minimum onboarding gates.</td></tr>
-          <tr><td><b>Identity and access controls are inconsistent</b></td><td>Treat identity, permissions, customer-data separation, and auditability as launch-critical requirements.</td></tr>
-          <tr><td><b>Cross-product data does not align</b></td><td>Establish shared definitions and mappings, contract tests, quality thresholds, lineage, and accountable data owners.</td></tr>
+          <tr><td><b>API maturity varies by product</b></td><td>Define the minimum API contract for the lighthouse journey—including required operations, versioning, documentation, and reliability—and close product-specific gaps before onboarding.</td></tr>
+          <tr><td><b>Identity and access controls are inconsistent</b></td><td>Establish one end-to-end identity and authorization model, then test that every request preserves the correct user, customer, account, and permission boundaries.</td></tr>
+          <tr><td><b>Cross-product data does not align</b></td><td>Agree on common entity definitions and mappings, assign data owners, and validate correlation, freshness, quality, and conflict-handling across products.</td></tr>
           <tr><td><b>Onboarding demand outruns the foundation</b></td><td>Sequence waves by customer value, product readiness, reuse, risk, and capacity—using governance to prevent drift.</td></tr>
           <tr><td><b>The happy path masks production risk</b></td><td>Require failure testing, production-readiness gates, controlled rollout, rollback criteria, and clear operational ownership.</td></tr>
         </tbody>
