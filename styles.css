@@ -602,7 +602,7 @@
 /* Slide 19: decision model integrated into the operating cadence */
 #case-cadence{padding-top:98px;padding-bottom:24px}
 #case-cadence>h2{font-size:clamp(36px,3.7vw,50px)!important}
-#case-cadence .operating-detail-table{margin-top:8px}
+#case-cadence .operating-detail-table{margin-top:18px}
 #case-cadence .operating-detail-table td{padding:5px 9px;font-size:14px;line-height:1.22}
 #case-cadence .operating-detail-table td strong{font-size:15px}
 #case-cadence .cadence-tradeoff{margin-top:6px!important;gap:5px}
