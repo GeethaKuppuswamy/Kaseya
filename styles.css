@@ -756,3 +756,13 @@
 @media(max-width:900px){
   :root{--type-slide-title:48px;--type-panel-title:18px;--type-body:15px;--type-label:13px}
 }
+
+/* Slide 21: simplified anticipated-risk and mitigation view */
+#case-risks{padding-top:104px;padding-bottom:38px}
+#case-risks .risk-response-table{width:100%;margin-top:24px;border-collapse:collapse;table-layout:fixed;background:#fff;border:1px solid var(--line)}
+#case-risks .risk-response-table th{padding:13px 18px;background:var(--deep);color:#fff;text-align:left;text-transform:uppercase;letter-spacing:.1em;font-size:13px;line-height:1.25}
+#case-risks .risk-response-table th:first-child{width:36%}
+#case-risks .risk-response-table td{padding:15px 18px;border-top:1px solid var(--line);font-size:16px;line-height:1.4;color:var(--muted);vertical-align:top}
+#case-risks .risk-response-table td:first-child{border-right:1px solid var(--line);color:var(--deep)}
+#case-risks .risk-response-table td b{font-size:17px;line-height:1.35;color:var(--ink)}
+@media(max-width:900px){#case-risks .risk-response-table{table-layout:auto}#case-risks .risk-response-table th:first-child{width:40%}#case-risks .risk-response-table td{font-size:15px;padding:12px}}
